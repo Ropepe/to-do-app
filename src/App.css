@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+.desnaStrana {
+  float: right;
+  position: absolute;
+  left: 500px;
+}
+.todoContainer {
+  background-color: #e9f3ec;
+  display: inline;
+  margin-top: -22px;
+  height: 100vh;
+  justify-content: space-between;
+}
+.headerContainter h1 {
+  color: #7ad8bd56;
+  margin: 0;
+  font-variant-caps: all-petite-caps;
+  font-size: 120px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputTodo {
+  /* background-color: rgb(177, 226, 255); */
+  color: #60935d;
+}
+.navbarContainer {
+  background-color: #bab700;
+  color: #14342b;
+  position: fixed;
+  float: left;
+  height: 100vh;
+  padding: 20px;
+}
+.todoListContainer {
+  left: 25px;
+  /* background-color: rgb(243, 194, 148); */
+}
+.todoItems {
+  left: 50px;
+  padding: 1px;
+}
+.headerContainter {
+  height: 30vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* .btn {
+  background-color: rosybrown;
   color: white;
+  font-variant-caps: all-petite-caps;
+  font-weight: 800;
+  font-size: 15px;
+} */
+
+.fill {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.fill::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+a {
+  border: solid 1px fff;
+  color: #14342b;
+  text-decoration: none;
+  transition: all 70ms ease-out;
+}
+a:hover {
+  color: #14342b;
+  padding: 10px;
+  border: solid 1px #60935d;
+  border-radius: 0 10px 10px 0;
+  background-color: #60935d2f;
+}
+li {
+  margin: 20px;
+  list-style-type: none;
+}
+.dugme {
+  margin-left: 70px;
+}
+.submit--btn:hover {
+  background-color: #28e0ac3b;
+  transition: all 0.2s;
+}
+.dugme2 {
+  margin-left: 10px;
+}
+.fill2 {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.2em;
+}
+.active-link {
+  color: #ff4cf0;
 }
