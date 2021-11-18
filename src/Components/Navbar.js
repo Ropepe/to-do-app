@@ -10,7 +10,7 @@ const links = [
   {
     id: 2,
     path: "about",
-    text: "O namaa",
+    text: "O nama",
   },
   {
     id: 3,
