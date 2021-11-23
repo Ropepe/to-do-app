@@ -15,7 +15,7 @@ const links = [
   {
     id: 3,
     path: "contact",
-    text: "Kontakttt",
+    text: "Kontak",
   },
   {
     id: 4,
